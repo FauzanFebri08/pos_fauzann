@@ -1,0 +1,370 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.users .card{
+    border: none;
+}
+
+.users .card-header{
+    padding: 20px;
+}
+
+.users .table tbody tr{
+    transition: .25s;
+}
+
+.users .table tbody tr:hover{
+    background: #f5f9ff;
+    transform: scale(1.01);
+}
+
+.users .badge{
+    font-size: 13px;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.users .btn{
+    border-radius: 10px;
+}
+
+.users .form-control{
+    border-radius: 10px;
+}
+
+.users .table{
+    margin-bottom: 0;
+}
+
+.produk .card-main {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.produk .header-banner {
+    background-color: #0d6efd;
+    color: #ffffff;
+    border-radius: 0.8rem;
+}
+
+.produk .header-banner-subtitle {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.produk .img-product-thumb {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.produk .input-search {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.produk .btn-search {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.form-tambah-produk {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-tambah-produk button,
+.form-tambah-produk a.btn-secondary {
+    display: inline-flex ;
+    align-items: center ;
+    justify-content: center ;
+    height: 38px;           
+    padding: 0.375rem 0.85rem ;
+    font-size: 0.875rem ;
+    vertical-align: top ;     
+    margin-top: 1rem ;
+    margin-bottom: 0 ;
+    box-sizing: border-box ;
+}
+
+
+.penjualan .input-group .form-control {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.penjualan.input-group .btn-primary {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+
+.penjualan .table .btn-sm {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+
+.detail-info-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 0.75rem;
+    padding: 1rem;
+}
+
+.detail-info-label {
+    color: #6c757d;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.detail-info-value {
+    color: #212529;
+    font-weight: 700;
+}
+
+.card-summary {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 1rem;
+    padding: 1.25rem;
+}
+
+.summary-total-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #198754;
+}
+
+.pos-product-wrapper {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.pos-product-item {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.pos-product-name {
+    font-weight: 700;
+    color: #212529;
+}
+
+.pos-product-price {
+    color: #198754;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.pos-cart-container {
+    border: 1px solid #e9ecef;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.pos-total-box {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.pos-total-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #198754;
+}
+
+
+.form-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.form-card .card-header {
+    background-color: #0d6efd !important; 
+    border-bottom: none;
+}
+
+
+.card-body form button[type="submit"],
+.card-body form .btn,
+.card-body form a.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    margin-top: 15px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.users .table .btn {
+    margin-top: 0 !important; 
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+
+.card-body form button[type="submit"] {
+    background-color: #198754 ;
+    border-color: #198754 ;
+    color: #ffffff ;
+}
+
+.card-body form button[type="submit"]:hover {
+    background-color: #157347 ;
+    border-color: #146c43 ;
+}
+
+
+.card-body form .btn-secondary,
+.card-body form a[href*="produk"] {
+    background-color: #6c757d ;
+    border-color: #6c757d ;
+    color: #ffffff ;
+}
+
+.card-body form .btn-secondary:hover,
+.card-body form a[href*="produk"]:hover {
+    background-color: #5c636a ;
+    border-color: #565e64 ;
+}
+
+/* Styling Card Form Utama */
+.form-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.form-card .card-header {
+    background-color: #0d6efd !important; 
+    border-bottom: none;
+}
+
+
+.card-body form .form-group,
+.card-body form .mb-3 {
+    margin-bottom: 1.25rem;
+}
+
+.card-body form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #495057;
+}
+
+.card-body form .form-control,
+.card-body form .form-select {
+    border-radius: 8px;
+    padding: 10px 14px;
+    border: 1px solid #ced4da;
+}
+
+.card-body form .form-control:focus,
+.card-body form .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+
+.card-body form button[type="submit"],
+.card-body form .btn,
+.card-body form a.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    margin-top: 15px;
+    padding: 8px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.card-body form button[type="submit"] {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    color: #ffffff !important;
+}
+
+.card-body form button[type="submit"]:hover {
+    background-color: #157347 !important;
+    border-color: #146c43 !important;
+}
+
+
+.card-body form .btn-secondary,
+.card-body form a[href*="users"] {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+    color: #ffffff !important;
+}
+
+.card-body form .btn-secondary:hover,
+.card-body form a[href*="users"]:hover {
+    background-color: #5c636a !important;
+    border-color: #565e64 !important;
+}
+
+.form-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.form-card .card-header {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    border-bottom: none;
+}
+
+.form-card .form-label {
+    font-size: 0.9rem;
+    color: #495057;
+    margin-bottom: 0.4rem;
+}
+
+.form-card .form-control,
+.form-card .form-select {
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ced4da;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-card .form-control:focus,
+.form-card .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.form-card .btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
